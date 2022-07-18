@@ -1,12 +1,15 @@
-import './App.css';
+import "./App.css";
 import Comment from "./components/Comment";
-import { comment } from "./data/data"
+import { comment } from "./data/data";
 
 function App() {
   return (
-    <Comment author={comment.author} text={comment.text} date={comment.date} />
+    <div className="app">
+      {comment.map((el) => (
+        <Comment author={el.author} text={el.text} date={el.date} />
+      ))}
+    </div>
   );
 }
-
 
 export default App;

@@ -1,17 +1,19 @@
 import UserInfo from "./UserInfo";
 import CommentWrapper from "./CommentWrapper";
+import { dateFormat } from "../helpers/general";
 
 const Comment = (props) => {
   return (
     <div className="Comment">
-      <UserInfo author={props.author} />
-      <div className="commentWrapper">
-      <CommentWrapper >
-     <div className="Comment-text">{props.text}</div>
-      <div className="Comment-date">{props.date.toLocaleDateString()}</div>
-     </CommentWrapper>
+      <div className="userInfo">
+        <UserInfo author={props.author} />
       </div>
-     
+      <div className="commentWrapper">
+        <CommentWrapper>
+          <p className="Comment-text">{props.text}</p>
+          <div className="Comment-date">{props.date}</div>
+        </CommentWrapper>
+      </div>
     </div>
   );
 };

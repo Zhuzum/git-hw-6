@@ -13,10 +13,6 @@
         background-color:  orange;
         text-align: center;
     }
-    .Comment{
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
-        flex-direction: column;
-    }
+   
+   
 

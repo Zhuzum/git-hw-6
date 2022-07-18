@@ -1,12 +1,10 @@
 const Avatar = (props) => {
   return (
-    <div>
-      <img
+    <img
       className="Avatar"
-      src={props.author.avatarUrl}
+      src="http://placekitten.com/g/64/64"
       alt={props.author.name}
     />
-    </div>
   );
 };
 
