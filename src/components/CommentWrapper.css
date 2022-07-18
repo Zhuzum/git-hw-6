@@ -1,0 +1,22 @@
+.commentWrapper{
+    background-color:  orange;
+    width: 100px;
+    text-align: center;
+    margin-top: 50px;
+    border: solid;
+    }
+    .UserInfo{
+        width: 100px;
+        height: 150px;
+        border-radius: 10px;
+        border: solid;
+        background-color:  orange;
+        text-align: center;
+    }
+    .Comment{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
